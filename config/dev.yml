@@ -2,3 +2,22 @@ logging:
   level: INFO
   loggers:
     com.nduckett.api: DEBUG
+  appenders:
+    - type: console
+      layout:
+        type: json
+
+server:
+  requestLog:
+    appenders:
+      - type: console
+        layout:
+          type: access-json
+
+metrics:
+  reporters:
+    - type: graphite
+      host: 192.168.1.254
+      port: 2003
+      prefix: api
+      transport: tcp
