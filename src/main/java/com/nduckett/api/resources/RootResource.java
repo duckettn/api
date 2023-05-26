@@ -1,14 +1,10 @@
 package com.nduckett.api.resources;
 
 import com.codahale.metrics.annotation.Timed;
-import io.dropwizard.logging.LoggingFactory;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-
-import static net.logstash.logback.argument.StructuredArguments.kv;
 
 
 @Path("/")
@@ -19,7 +15,6 @@ public class RootResource {
     @GET
     @Timed
     public String get() {
-        LOGGER.info("Welcoming", kv("name", "Nathan"));
         return "Welcome";
     }
 }
