@@ -1,0 +1,16 @@
+name: api
+id: ari:cloud:compass:00ce39a6-c492-450e-9742-f3a40c49c0bf:component/f95b9e89-e809-4291-a213-c7b4485be3d7/b6124089-e1a6-4a5b-bead-26dc7e8dd5d7
+description: null
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/duckettn/api
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
